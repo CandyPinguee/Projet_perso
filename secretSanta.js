@@ -38,7 +38,7 @@ function displayName() {
 
   for (i=0; i < usersName.length; i++) {
 
-    document.getElementById("inputList").innerHTML+= usersName[i] + '<br>';
+   document.getElementById("inputList").innerHTML+= "&#11088" + usersName[i] + '<br>';
   }
 }
 
@@ -62,6 +62,14 @@ function secretName() {
       nameGame.splice(randomName, 1);
       console.log(nameGame);
       console.log(resultFinal);
+    }
+    
+    if (gamebutton.innerText === "Lancer le tirage au sort") {
+
+      gamebutton.innerText= "🎄 Tirage terminé ! 🎄";
+    } else {
+
+      gamebutton.innerText= "Lancer le tirage au sort"
     }
     
     winName(resultFinal);
