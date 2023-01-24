@@ -3,31 +3,31 @@ let usersName= [];
 let nameGame= [];
 let resultFinal= {};
 
-//Je créer une fonction qui génère de nouveau input pour entrer des participants
+//Je créer une fonction pour entrer des participants
 function addName() {
 
-let button = document.getElementById('valid');
-let buttonTwo= document.getElementById("suppName");
-let yourName;
+  let button = document.getElementById('valid');
+  let buttonTwo= document.getElementById("suppName");
+  let yourName;
 
-button.addEventListener('click', event => {
+  button.addEventListener('click', event => {
 
-  yourName= document.getElementById("in").value;
-  usersName.push(yourName);
-  nameGame.push(yourName);
-  displayName();
-  console.log(usersName);
-  console.log(nameGame);
-});
+    yourName= document.getElementById("in").value;
+    usersName.push(yourName);
+    nameGame.push(yourName);
+    displayName();
+    console.log(usersName);
+    console.log(nameGame);
+  });
   
-buttonTwo.addEventListener('click', event => {
+  buttonTwo.addEventListener('click', event => {
 
-  usersName.pop();
-  nameGame.pop();
-  displayName();
-  console.log(usersName);
-  console.log(nameGame);
-});
+    usersName.pop();
+    nameGame.pop();
+    displayName();
+    console.log(usersName);
+    console.log(nameGame);
+  });
   
 } 
 
@@ -38,7 +38,7 @@ function displayName() {
 
   for (i=0; i < usersName.length; i++) {
 
-   document.getElementById("inputList").innerHTML+= "&#11088" + usersName[i] + '<br>';
+    document.getElementById("inputList").innerHTML+= "&#11088" + usersName[i] + '<br>';
   }
 }
 
@@ -64,13 +64,7 @@ function secretName() {
       console.log(resultFinal);
     }
     
-    if (gamebutton.innerText === "Lancer le tirage au sort") {
-
-      gamebutton.innerText= "🎄 Tirage terminé ! 🎄";
-    } else {
-
-      gamebutton.innerText= "Lancer le tirage au sort"
-    }
+    gamebutton.innerText= "🎄 Tirage terminé ! 🎄";
     
     winName(resultFinal);
   });
@@ -90,7 +84,8 @@ function winName(dict) {
 
       alert(dict[myName]);
       console.log(dict);
-    } else {
+    } 
+    else {
       
       alert("nom inexistant !");
     }
