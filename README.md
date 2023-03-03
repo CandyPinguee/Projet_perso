@@ -11,3 +11,6 @@ Pour la maquette et le fond de mon site, je me suis servie de Figma.
 Ce projet à était réalisé en une semaine.
 
 Je suis très fière de ce premier petit projet. 👌
+
+![image](https://user-images.githubusercontent.com/115542526/222692540-9e13d7eb-2df1-49e8-8aeb-5704febb91ef.png)
+
